@@ -1,0 +1,28 @@
+/* This bit of CSS is a really common way to replace a piece of text with an image. The example here is for a link, 
+but you could use it for any content you wanted to replace with an image. Doing it this way keeps your html code
+"semantic" aka meaningful (the link says what it is as opposed to being just an image) and allows for flexibility. */ 
+
+
+/* Change the names of things as needed. This doesn't need to be called linkclass. */ 
+.linkclass a {
+  /* Set a width and height for your "button" */
+  width: 300px; /* Set to the right width for your button */
+	height: 100px; /* Set to the right height for your button */
+
+/*	Set your background image + any other background properties such as repeating, etc. */
+	background-image: url(path/to/image.jpg);
+
+/*	Set overflow to hidden */
+	overflow: hidden;
+/*	Push your text wayyyyy out of its box. Since overflowed content is hidden, that hides the text. */
+	text-indent: -5000em;
+	}
+
+.linkclass a:link {
+	
+	}
+
+.linkclass a:hover {
+/*	Set your other states. Give your hover a new background image, a new background color, etc. */
+	}
+
